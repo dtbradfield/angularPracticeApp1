@@ -1,6 +1,8 @@
 p {
     color: green;
-    background-color: whitesmoke;
+    background-color: lightgreen;
     font-weight: bolder;
     text-align: center;
+    padding: 5%;
+    border: 1px solid darkgreen;
 }

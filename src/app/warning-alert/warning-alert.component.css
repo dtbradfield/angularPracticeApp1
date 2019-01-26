@@ -1,6 +1,8 @@
 p {
     color: red;
-    background-color: yellow;
+    background-color: mistyrose;
     font-weight: bolder;
     text-align: center;
+    padding: 5%;
+    border: 1px solid red;
 }
