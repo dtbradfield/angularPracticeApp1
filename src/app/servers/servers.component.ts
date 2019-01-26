@@ -9,11 +9,13 @@ export class ServersComponent implements OnInit {
   serverCreationStatus = 'No server was created';
   serverName = '';
   userName = '';
+  serverCreated = false;
 
   ngOnInit() {
   }
 
   onCreateServer() {
+    this.serverCreated = true;
     this.serverCreationStatus = 'Server was created! Server Name: ' + this.serverName;
   }
 
