@@ -1,3 +1,10 @@
+-Used angular and followed a guide on how to use it. Mine is a bit different than the way the instructor did it but it is functional.
+-Set dynamic text input that can be reset by a button.
+-Created a Hide/Show content bytton that also captures the date you pressed the button and logs it onto the page. Every button press after five will alter the field to have diff background and font colors.
+-Created a list of servers who randomly get their online status assigned. Depending on status, style changes.
+-Added a button that lets you add a server to the list and clears the form after
+-All inputs must be valid strings to function
+
 # AngularApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.
