@@ -12,13 +12,28 @@
 
 <hr>
 
+<p *ngIf="detailsShow">THIS IS THE WORST GAME OF THRONES SPOILER EVER!<br>GAHHHHHH HIDE ME OH NO!</p>
+
+<button class="btn btn-info" (click)="onDetails()">{{detailsAction}} details</button>
+
+<ul>
+    <li *ngFor="let buttonPress of logDetailsButtonPresses" 
+    [ngStyle]="{backgroundColor: buttonPress >= 5 ? 'blue' : 'transparent'}"
+    [ngClass]="{'white-text': buttonPress >= 5}">
+        You pressed it {{buttonPress}} times. Coward.</li>
+</ul>
+
+<br>
+
+<hr>
+
 <label>Server Name(s):</label>
 
 <input type="text" class="form-control" [(ngModel)]="serverName" placeholder="Change Server Name">
 
 <br>
 
-<button class="btn btn-secondary" [disabled]="serverName === ''" (click)="onCreateServer()">Add Server</button>
+<button class="btn btn-danger" [disabled]="serverName === ''" (click)="onCreateServer()">Add Server</button>
 
 <p *ngIf="serverCreated; else noServer">Server was created, server name is {{serverName}}</p>
 <ng-template #noServer>
@@ -33,6 +48,4 @@
 
 <br>
 
-<app-server></app-server>
-
-<app-server></app-server>
+<app-server *ngFor="let server of servers"></app-server>

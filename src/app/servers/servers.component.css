@@ -3,3 +3,12 @@ label {
     font-weight: bold;
     font-size: 22px;
 }
+
+ul li {
+    text-align: center;
+}
+
+.white-text {
+    color: white;
+    font-weight: bolder;
+}
