@@ -14,22 +14,18 @@ export class ServersComponent implements OnInit {
   detailsAction = 'Show';
   detailsShow = false;
   logDetailsButtonPresses = [];
- 
 
-  getButtonLogColor() {
-    this.logDetailsButtonPresses >= 5 ? 'blue' : 'transparent';
-  }
   
 
   onDetails() {
     if ( this.detailsShow === false ) {
       this.detailsAction = 'Hide';
       this.detailsShow = true;
-      this.logDetailsButtonPresses.push(this.logDetailsButtonPresses.length + 1);
+      this.logDetailsButtonPresses.push(new Date());
     } else {
         this.detailsAction = 'Show';
         this.detailsShow = false;
-        this.logDetailsButtonPresses.push(this.logDetailsButtonPresses.length + 1);
+        this.logDetailsButtonPresses.push(new Date());
     }
   }
 

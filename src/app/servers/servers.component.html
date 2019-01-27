@@ -17,10 +17,10 @@
 <button class="btn btn-info" (click)="onDetails()">{{detailsAction}} details</button>
 
 <ul>
-    <li *ngFor="let buttonPress of logDetailsButtonPresses" 
-    [ngStyle]="{backgroundColor: buttonPress >= 5 ? 'blue' : 'transparent'}"
-    [ngClass]="{'white-text': buttonPress >= 5}">
-        You pressed it {{buttonPress}} times. Coward.</li>
+    <li *ngFor="let buttonPress of logDetailsButtonPresses; let i = index" 
+    [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'transparent'}"
+    [ngClass]="{'white-text': i >= 4}">
+        You have been captured using this button at {{buttonPress}}<br></li>
 </ul>
 
 <br>
