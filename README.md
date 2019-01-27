@@ -10,6 +10,8 @@
 
 -All inputs must be valid strings to function
 
+-Used bootstrap for styling
+
 # AngularApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.
